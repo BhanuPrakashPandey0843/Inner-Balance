@@ -34,10 +34,9 @@ const Data = () => {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-gray-600 mb-16 sm:mb-20 text-base sm:text-lg leading-relaxed"
         >
-          Real feedback from researchers, engineers, and water specialists who
-          rely on{" "}
-          <span className="font-semibold text-black">Neer Nirikshan</span> for
-          groundwater quality monitoring and risk assessment.
+          {"Real feedback from researchers, engineers, and water specialists who rely on "}
+          <span className="font-semibold text-black">Neer Nirikshan</span>
+          {" for groundwater quality monitoring and risk assessment."}
         </motion.p>
 
         {/* Content Section */}
@@ -51,8 +50,7 @@ const Data = () => {
             className="w-full lg:w-1/2 text-left bg-white/60 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-lg border border-yellow-100 hover:shadow-xl transition-all duration-300"
           >
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-              Pay a low flat fee for both live sessions as well as messaging
-              with your therapist. Therapy doesn't have to be expensive.
+              {"Pay a low flat fee for both live sessions as well as messaging with your therapist. Therapy doesn't have to be expensive."}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -62,8 +60,7 @@ const Data = () => {
                 className="p-5 sm:p-6 bg-white rounded-xl shadow-md border border-gray-100"
               >
                 <p className="text-gray-700 italic text-sm sm:text-base">
-                  "The accuracy and visualization tools are game-changing. It
-                  has streamlined our water data monitoring completely!"
+                  {"The accuracy and visualization tools are game-changing. It has streamlined our water data monitoring completely!"}
                 </p>
                 <h4 className="mt-4 font-semibold text-black">
                   — Dr. Meera Sharma
@@ -79,8 +76,7 @@ const Data = () => {
                 className="p-5 sm:p-6 bg-white rounded-xl shadow-md border border-gray-100"
               >
                 <p className="text-gray-700 italic text-sm sm:text-base">
-                  "Neer Nirikshan helped us make faster and more accurate
-                  assessments. Excellent interface and smooth data handling."
+                  {"Neer Nirikshan helped us make faster and more accurate assessments. Excellent interface and smooth data handling."}
                 </p>
                 <h4 className="mt-4 font-semibold text-black">
                   — Rajesh Verma
