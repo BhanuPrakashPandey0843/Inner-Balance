@@ -1,3 +1,3 @@
 git add .
-git commit -m "added the backend folder"
+git commit -m "added the Navbar"
 git push origin main
