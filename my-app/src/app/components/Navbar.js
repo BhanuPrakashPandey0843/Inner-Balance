@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "./assets/logo.png";
@@ -8,7 +9,12 @@ import logo from "./assets/logo.png";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Features", "Contact"];
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Features", href: "/features" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
     <nav className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
@@ -33,9 +39,12 @@ const Navbar = () => {
         >
           {navItems.map((item, index) => (
             <li key={index} className="relative group cursor-pointer">
-              <span className="transition-colors text-gray-700 group-hover:text-yellow-500">
-                {item}
-              </span>
+              <Link
+                href={item.href}
+                className="transition-colors text-gray-700 group-hover:text-yellow-500"
+              >
+                {item.name}
+              </Link>
               <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-500 transition-all group-hover:w-full"></span>
             </li>
           ))}
@@ -48,9 +57,12 @@ const Navbar = () => {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="hidden md:block"
         >
-          <button className="px-4 py-1 border-2 border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition">
+          <Link
+            href="/help"
+            className="px-4 py-1 border-2 border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"
+          >
             Help ?
-          </button>
+          </Link>
         </motion.div>
 
         {/* Mobile Menu Button */}
@@ -76,18 +88,24 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center py-4 space-y-4 font-semibold text-gray-700">
               {navItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="cursor-pointer hover:text-yellow-500 transition"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item}
+                <li key={index}>
+                  <Link
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="hover:text-yellow-500 transition"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
               <li>
-                <button className="px-4 py-1 border-2 border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition">
+                <Link
+                  href="/help"
+                  onClick={() => setMenuOpen(false)}
+                  className="px-4 py-1 border-2 border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"
+                >
                   Help ?
-                </button>
+                </Link>
               </li>
             </ul>
           </motion.div>
