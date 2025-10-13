@@ -2,9 +2,11 @@
 const nextConfig = {
   images: {
     domains: [
-      "media.tenor.com", // For question mark GIF
+      "media.tenor.com",
       "png.pngtree.com",
-      "www.setindiabiz.com", // For leaf illustration
+      "www.setindiabiz.com",
+      "cdn.dribbble.com", // For meditation GIF
+      "gifyard.com" // Optional: keep if you use old GIF
     ],
   },
 };
