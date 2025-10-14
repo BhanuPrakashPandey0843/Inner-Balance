@@ -1,4 +1,4 @@
-````md
+
 <p align="center">
   <img src="./Inner Balance Logo.png" alt="Inner-Balance Logo" width="180" />
 </p>
