@@ -2,12 +2,14 @@
 const nextConfig = {
   images: {
     domains: [
-      "media.tenor.com",
-      "png.pngtree.com",
-      "www.setindiabiz.com",
-      "cdn.dribbble.com", // For meditation GIF
-      "gifyard.com" // Optional: keep if you use old GIF
-    ],
+  "cdn.dribbble.com",
+  "media.tenor.com",
+  "media1.tenor.com",
+  "png.pngtree.com",
+  "www.setindiabiz.com",
+  "gifyard.com"
+],
+
   },
 };
 
