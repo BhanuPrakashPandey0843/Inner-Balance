@@ -1,0 +1,64 @@
+# Root level .gitignore for Inner Balance project
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Large model files (if any in root)
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.h5
+*.ckpt
+
+# Documentation builds
+docs/_build/
+site/
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# Misc
+*.pem
+*.key
+*.cert
+
